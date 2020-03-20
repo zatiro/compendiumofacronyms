@@ -1,13 +1,22 @@
 <?php
 
     $query = "select * from compendium;"
-
+    $result = mysqli_query($connection, $query);
 ?>
 
 <div class="card bg-light">
-  <h4 class="card-header"><span>CofA</span> - Compendium of Acronyms</h4>
-  <div class="card-body">
-    <h5 class="card-title">Light card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-  </div>
+    <h4 class="card-header"><span>CofA</span> - Compendium of Acronyms</h4>
+    <div class="card-body">
+        <div class="conteiner">
+            <div class="row">
+                <div class="col">
+                    <p class="card-text">Está em dúvida no que significa uma sigla? Pesquise aqui!</p>
+                </div>
+                <div class="col col-3">
+                    <a href="index.php?page=insertAcronym" class="btn btn-success"> Insert new Acronym</a>
+                </div>
+            </div>
+        </div>
+        
+    </div>
 </div>

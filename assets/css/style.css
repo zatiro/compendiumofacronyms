@@ -31,6 +31,11 @@ header{
     background-color: lightgrey;
 }
 
+.col-3{
+    float: right;
+    text-align: right;
+}
+
 .page{
     padding: 20px;
 }
