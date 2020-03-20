@@ -8,7 +8,7 @@ $database = 'heroku_73bd3f8c7d8b75c';
 
 $connection = mysqli_connect($servidor, $usuario, $senha, $database);
 
-if(!$conexao){
+if(!$connection){
     echo 'Erro ao conectar com o banco de dados';
 }
 ?>
