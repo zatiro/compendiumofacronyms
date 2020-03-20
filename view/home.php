@@ -1,6 +1,6 @@
 <?php
 
-    $query = "select * from compendium;"
+    $query = "select * from compendium;";
     $result = mysqli_query($connection, $query);
 ?>
 
