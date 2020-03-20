@@ -20,13 +20,15 @@
 <body>
     <?php include_once('header.php'); ?>
 
-    <?php
-        if(isset($_GET['page'])){
-            $page = $_GET['page'];
-        }
-        else{
-            $page = 'home';
-        }
-        include_once('view/' . $page . '.php');
-    ?>
+    <div class='page'>
+        <?php
+            if(isset($_GET['page'])){
+                $page = $_GET['page'];
+            }
+            else{
+                $page = 'home';
+            }
+            include_once('view/' . $page . '.php');
+        ?>
+    </div>
 </body>

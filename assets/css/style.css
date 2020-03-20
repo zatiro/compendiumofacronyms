@@ -1,7 +1,6 @@
 body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: lightskyblue;
-    padding: 20px;
 }
 
 header{
@@ -11,6 +10,7 @@ header{
 
 .container{
     margin: 0px;
+    max-width: 100%;
 }
 
 .header-col-1{
@@ -23,4 +23,8 @@ header{
 
 .header-col-3{
     background-color: lightgrey;
+}
+
+.page{
+    padding: 20px;
 }
