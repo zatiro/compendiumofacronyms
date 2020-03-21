@@ -2,7 +2,7 @@
     $acronym = strtoupper($_POST['acronym']);
     $description = $_POST['description'];
 
-    $query = "INSERT INTO compendium('acronym', 'description') VALUES ('$acronym', '$description');";
+    $query = "INSERT INTO compendium(acronym, description) VALUES ('$acronym', '$description');";
     $result = mysqli_query($connection, $query);
 
     echo $query . $result;
