@@ -7,7 +7,7 @@
                     <p class="card-text">What does PN means? Find this and more right below!</p>
                 </div>
                 <div class="col col-3">
-                    <a href="index.php?page=insertAcronym" class="btn btn-success">Insert New Acronym</a>
+                    <a href="index.php?page=insertAcronym" class="btn btn-primary">Insert New Acronym</a>
                 </div>
             </div>
         </div>

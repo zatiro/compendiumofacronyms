@@ -16,7 +16,7 @@
                 </div>
 
             </div>
-            <button type="submit" class="btn btn-success" placeholder="Ex: Part Number ou Número da Peça">Insert</button>
+            <button type="submit" class="btn btn-primary" placeholder="Ex: Part Number ou Número da Peça">Insert</button>
         </form>
 
         <br>

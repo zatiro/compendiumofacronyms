@@ -5,9 +5,9 @@
     $query = "INSERT INTO compendium(acronym, description) VALUES ('$acronym', '$description');";
     $result = mysqli_query($connection, $query);
 
-    echo $query . $result;
+    // echo $query . $result;
 
-    exit();
+    // exit();
 
     if($result){
         header('location:index.php?page=insertAcronym&result=success');
