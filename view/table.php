@@ -29,3 +29,9 @@
         ?>
     </tbody>
 </table>
+
+<script>
+    $(document).ready(function() {
+        $('#compendium').DataTable();
+    } );
+</script>
