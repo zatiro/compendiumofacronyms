@@ -5,7 +5,7 @@
     $query = "INSERT INTO compendium('acronym', 'description') VALUES ('$acronym', '$description');";
     $result = mysqli_query($connection, $query);
 
-    echo $query;
+    echo $query . $result;
 
     exit();
 
