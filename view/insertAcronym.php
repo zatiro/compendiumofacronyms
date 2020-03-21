@@ -3,7 +3,7 @@
     <div class="card-body">
         <h5 class="card-title">Special title treatment</h5>
 
-        <form method="post" action="view/insertAcronymProcess.php">
+        <form method="post" action="index.php?page=insertAcronymProcess">
             <div class="row">
 
                 <div class="col">
