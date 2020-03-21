@@ -1,7 +1,6 @@
 <div class="card">
     <h5 class="card-header">Insert New Acronym</h5>
     <div class="card-body">
-        <h5 class="card-title">Special title treatment</h5>
 
         <form method="post" action="index.php?page=insertAcronymProcess">
             <div class="row">
@@ -19,6 +18,9 @@
             </div>
             <button type="submit" class="btn btn-success" placeholder="Ex: Part Number ou Número da Peça">Insert</button>
         </form>
+
+        <br>
+
         <?php
             if(isset($_GET['result'])){
                 if($_GET['result'] == 'success'){
