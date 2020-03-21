@@ -1,5 +1,5 @@
-<div class="card bg-light">
-    <h4 class="card-header"><span>CofA</span> - Compendium of Acronyms</h4>
+<div class="card border-primary">
+    <h4 class="card-title"><span>CofA</span> - Compendium of Acronyms</h4>
     <div class="card-body">
         <div class="conteiner">
             <div class="row">
@@ -12,6 +12,8 @@
             </div>
         </div>
         
+        <br>
+
         <?php include_once('table.php'); ?>
 
     </div>

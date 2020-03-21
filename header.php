@@ -5,7 +5,6 @@
             <div class="col header-col-1"></div>
 
             <div class="col header-col-2">
-                <div class="trapezoid"></div>
                 <a href="index.php"><h3 style="color: white;">Compendium of Acronyms</h3></a>
             </div>
 
