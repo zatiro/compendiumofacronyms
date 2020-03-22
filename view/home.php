@@ -1,7 +1,5 @@
 <div class="card border-primary">
-    <div class="card-header">
-        <h4 class="card-header"><span>CofA</span> - Compendium of Acronyms</h4>
-    </div>
+    <h4 class="card-header"><span>CofA</span> - Compendium of Acronyms</h4>
     <div class="card-body">
         <div class="conteiner">
             <div class="row">
