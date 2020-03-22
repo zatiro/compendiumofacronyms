@@ -39,11 +39,3 @@ header{
 .page{
     padding: 20px;
 }
-
-.trapezoid {
-	border-bottom: 50px solid royalblue;
-	border-left: 25px solid transparent;
-	border-right: 25px solid transparent;
-	height: 0;
-	width: 125px;
-}

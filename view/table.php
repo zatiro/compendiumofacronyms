@@ -4,6 +4,8 @@
 
     $query = "select * from compendium;";
     $result = mysqli_query($connection, $query);
+
+    $existsColumnActions = True;
 ?>
 
 <table class='table table-hover table-striped' id="compendium">
@@ -12,6 +14,9 @@
             <?php
                 foreach($columnsTitles as $title){
                     echo '<th>' . $title . '</th>';
+                }
+                if($existsColumnActions){
+                    echo '<th>Actions</th>'
                 }
             ?>
         </tr>
