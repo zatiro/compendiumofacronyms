@@ -1,19 +1,37 @@
 <?php
-    $acronym = strtoupper($_POST['acronym']);
-    $description = $_POST['description'];
+    $acronym = addslashes(trim(strtoupper($_POST['acronym'])));
+    $description = addslashes(trim($_POST['description']));
 
-    $query = "INSERT INTO compendium(acronym, description) VALUES ('$acronym', '$description');";
+    $query = "SELECT COUNT(*) from compendium WHERE acronym = '$acronym';";
     $result = mysqli_query($connection, $query);
 
-    // echo $query . $result;
+    $row = mysqli_fetch_array($result);
+    $count = $row['COUNT(*)'];
+
+    // echo $query . " - " . $row . " - " . $count;
 
     // exit();
 
-    if($result){
-        header('location:index.php?page=insertAcronym&result=success');
+    if($count > 0){
+        header('location:index.php?page=insertAcronym&result=exists');
     }
     else{
-        header('location:index.php?page=insertAcronym&result=error');
+        $query = "INSERT INTO compendium(acronym, description) VALUES ('$acronym', '$description');";
+        $result = mysqli_query($connection, $query);
+
+        // echo $query . $result;
+
+        // exit();
+
+        if($result){
+            header('location:index.php?page=insertAcronym&result=success');
+        }
+        else{
+            header('location:index.php?page=insertAcronym&result=error');
+        }
     }
+
+
+    
 
 ?>

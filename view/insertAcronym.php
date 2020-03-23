@@ -28,6 +28,11 @@
                             Successfully inserted!
                         </div>";
                 }
+                elseif($_GET['result'] == 'exists'){
+                    echo "<div class='alert alert-danger' role='alert'>
+                            Acronym already inserted!
+                        </div>";
+                }
                 else{
                     echo "<div class='alert alert-danger' role='alert'>
                             Error while inserting!
