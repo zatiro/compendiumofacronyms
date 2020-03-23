@@ -5,7 +5,7 @@
     $query = "select * from compendium;";
     $result = mysqli_query($connection, $query);
 
-    $existsColumnActions = True;
+    $existsColumnActions = False;
 ?>
 
 <table class='table table-hover table-striped' id="compendium">
@@ -16,7 +16,7 @@
                     echo '<th>' . $title . '</th>';
                 }
                 if($existsColumnActions){
-                    echo '<th>Actions</th>'
+                    echo '<th>Actions</th>';
                 }
             ?>
         </tr>
@@ -37,6 +37,10 @@
 
 <script>
     $(document).ready(function() {
-        $('#compendium').DataTable();
+        $('#compendium').DataTable({
+            "paging": false,
+            "ordering": true,
+            "scrollY": '60vh'
+        });
     } );
 </script>
