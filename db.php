@@ -11,4 +11,10 @@ $connection = mysqli_connect($servidor, $usuario, $senha, $database);
 if(!$connection){
     echo 'Erro ao conectar com o banco de dados';
 }
+else{
+    mysqli_query($connection, "SET NAMES 'utf8'");
+    mysqli_query($connection, "SET character_set_connection=utf8");
+    mysqli_query($connection, "SET character_set_client=utf8");
+    mysqli_query($connection, "SET character_set_results=utf8");
+}
 ?>

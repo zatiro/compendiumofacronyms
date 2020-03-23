@@ -8,7 +8,7 @@
 <html>
 <head>
     <title>CofA - Compendium Of Acronyms</title>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
 
     <?php 
         include_once('scriptsHead.php');
