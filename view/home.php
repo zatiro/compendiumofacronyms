@@ -4,10 +4,10 @@
         <div class="conteiner">
             <div class="row">
                 <div class="col">
-                    <p class="card-text">What does PN means? Find this and more right below!</p>
+                    <p class="card-text">What does PN mean? Find this and more right below!</p>
                 </div>
                 <div class="col col-3">
-                    <a href="index.php?page=insertAcronym" class="btn btn-primary">Insert New Acronym</a>
+                    <a href="index.php?page=insertAcronym" class="btn btn-primary">New Acronym</a>
                 </div>
             </div>
         </div>
